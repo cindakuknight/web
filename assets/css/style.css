@@ -1,0 +1,344 @@
+/* ===========================
+   PENDIDIKAN PROFETIK
+   STYLE.CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7f5;
+    color:#333;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:white;
+    padding:20px 10%;
+    border-bottom:3px solid #0B5E2B;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.logo-area img{
+    width:90px;
+}
+
+.judul-web h1{
+    color:#0B5E2B;
+    font-size:32px;
+}
+
+.judul-web p{
+    color:#666;
+    font-size:16px;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+    background:#0B5E2B;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    padding:18px 22px;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    background:#C9A227;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:linear-gradient(
+        rgba(11,94,43,.85),
+        rgba(11,94,43,.85)
+    );
+
+    color:white;
+}
+
+.hero h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#C9A227;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#0B5E2B;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+    width:90%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:40px;
+}
+
+/* ===========================
+   ARTIKEL
+=========================== */
+
+.artikel h2{
+    color:#0B5E2B;
+    margin-bottom:25px;
+    border-left:6px solid #C9A227;
+    padding-left:15px;
+}
+
+.artikel-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:25px;
+}
+
+.empty-card{
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.empty-card h3{
+
+    color:#0B5E2B;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar-box{
+
+    background:white;
+
+    margin-bottom:25px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.sidebar-box h3{
+
+    color:#0B5E2B;
+
+    margin-bottom:15px;
+
+}
+
+.sidebar-box input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+}
+
+.sidebar-box ul{
+
+    list-style:none;
+
+}
+
+.sidebar-box li{
+
+    padding:10px 0;
+
+    border-bottom:1px solid #eee;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar-box li:hover{
+
+    color:#0B5E2B;
+
+    padding-left:10px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#0B5E2B;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+footer h2{
+
+    margin-bottom:15px;
+
+}
+
+footer hr{
+
+    margin:20px auto;
+
+    width:300px;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.3);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+main{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
+}
+
+.logo-area{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+height:400px;
+
+padding:20px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.judul-web h1{
+
+font-size:24px;
+
+}
+
+.logo-area img{
+
+width:70px;
+
+}
+
+}
